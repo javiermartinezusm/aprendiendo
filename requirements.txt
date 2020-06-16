@@ -13,6 +13,6 @@ pylint==2.5.3
 python==3.8.3
 six==1.15.0
 toml==0.10.1
-unicorn==1.0.1
+gunicorn==1.0.1
 Werkzeug==1.0.1
 wrapt==1.12.1
