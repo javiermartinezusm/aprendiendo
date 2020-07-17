@@ -1,3 +1,6 @@
+{% block nompestaña %}
+Confesiones!!
+{% endblock %}
 {% extends "layout.html" %}
 {% block tablas_activo %}
 active
@@ -17,17 +20,17 @@ active
     <table class="table" cellspacing="0">
         <thead>
             <tr>
-                <th>message </th>
-                <th>message_id</th>
-                <th>user</th>
-                <th>time</th>
+                <th>N° </th>
+                <th>Mensaje</th>
+                <th>Usuario</th>
+                <th>Hora</th>
             </tr>
         </thead>
         <tbody>
             {% for row in msgs %}
             <tr>
-                <td> {{row[0]}}</td>
-                <td>{{row[1]}}</td>
+                <td> {{row[1]}}</td>
+                <td>{{row[0]}}</td>
                 <td>{{row[2]}}</td>
                 <td>{{row[3]}}</td>
             </tr>
